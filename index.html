@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naresh Technologies</title>
+    <link rel="stylesheet"  href="/node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css" />
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<style>
+    @media screen and (orientation:portrait) {
+        .drp-2 {
+            display: none;
+        }
+
+    }
+
+    @media screen and (orientation:landscape) {
+        .drp-1 {
+            display: none;
+        }
+
+    }
+
+
+    nav li {
+        list-style: none;
+        color: #9d9d9d;
+    }
+    nav li a:hover {
+        list-style: none;
+        color: #fff;
+    }
+
+    .ft-1 ul li a:hover {
+        text-decoration: underline;
+        color: #711111;
+
+
+    }
+
+    .ft-1 ul li a {
+        text-decoration: none;
+
+
+    }
+
+    .ft-1 ul li {
+        padding-top: 20px;
+    }
+
+    .f-2 ul li {
+        padding-top: 20px;
+    }
+
+    .img-1 {
+        width: 300px;
+        height: 200px;
+        margin-left: -15px;
+        padding-top: 50px;
+        padding-left: 10px;
+    }
+
+    .img-1:hover {
+        width: 280px;
+        height: 180px;
+        transform: scale(1.5);
+        transition-duration: 1ms;
+    }
+
+    body {
+        margin-left: 15px;
+        margin-right: 15px;
+        box-shadow: 1px 5px 8px 10px #333;
+    }
+
+    .s1,
+    .s2,
+    .s3 {
+        transition: 2s;
+    }
+
+    .s1:hover,
+    .s2:hover,
+    .s3:hover {
+        transition: 1s;
+        transform: scale(1.1);
+    }
+</style>
+<body class="">
+    <header>
+        <h3 class="text-center pt-5 fw-bold">Naresh Institute and Technologies</h3>
+        <div style="margin: 0px 5px 0px 5px;">
+            <nav style=" border-radius: 5px; margin-top:50px; background-image: linear-gradient(to bottom, #3c3c3c 0%, #222 100%);" class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-start" id="navbarNavDropdown">
+                        <ul class="navbar-nav mx-lg-5 gap-2 mt-sm-1">
+                            <li class="nav-item">
+                                <a style=" color: #7d1818; " class="nav-link active " aria-current="page"onMouseOver="this.style.color='#fff'" onMouseOut="this.style.color='#9d9d9d'" href="./index.html">
+                                    <span class="bi bi-house-door-fill"></span> Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style=" color: #9d9d9d;" onMouseOver="this.style.color='#fff'" onMouseOut="this.style.color='#9d9d9d'" class="nav-link " href="./about.html" >
+                                    <span class="bi bi-question-circle"></span> About
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a style=" color: #9d9d9d;" onMouseOver="this.style.color='#fff'" onMouseOut="this.style.color='#9d9d9d'" class="nav-link " href="./service.html">
+                                    <span class="bi bi-question-diamond"></span> Service
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a style=" color: #9d9d9d;" onMouseOver="this.style.color='#fff'" onMouseOut="this.style.color='#9d9d9d'" class="nav-link " href="./contact.html">
+                                    <span class="bi bi-phone"></span> Contact Us
+                                </a>
+                            </li>
+                            <div class="drp-1">
+                                <li class="nav-item dropdown   " >
+                                    <a style=" color: #9d9d9d;" onMouseOver="this.style.color='#fff'" onMouseOut="this.style.color='#9d9d9d'" class="nav-link dropdown-toggle" href="./signin.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="bi bi-box-arrow-in-right"></span> Sign In
+                                    </a>
+                                    <ul class="drp-2 dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="./signin.html"><span class="bi bi-box-arrow-in-right"></span> Sign In</a></li>
+                                        <li><a class="dropdown-item" href="./signup.html"><span class="bi bi-person-add"></span> Sign Up</a></li>
+                                        <li><a class="dropdown-item" href="./Reg.html"><span class="bi bi-unlock-fill"></span> Change Password</a></li>
+                                    </ul>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="drp-2 ">
+                        <li class="nav-item dropdown mx-5">
+                            <a class="nav-link dropdown-toggle" onMouseOver="this.style.color='#fff'" onMouseOut="this.style.color='#9d9d9d'" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="bi bi-box-arrow-in-right"></span>
+                                Sign In       
+                            </a>
+                            <ul style="margin-left: -62px; margin-top: 14px;" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./signin.html"><span class="bi bi-box-arrow-in-right fs-5"></span> Sign In</a></li>
+                                <li><a class="dropdown-item" href="./signup.html"><span class="bi bi-person-fill-add fs-4"></span> Sign Up</a></li>
+                                <li><a class="dropdown-item" href="./Reg.html"><span class="bi bi-unlock-fill fs-5"></span> Change Password</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mt-3">
+        <div class="carousel-fade" data-bs-theme="dark" data-bs-ride="carousel" id="flipkart">
+
+            <div style="max-width: 100%; height:;" class="carousel-inner">
+                <div class="carousel-item active" data-bs-Interval="1000">
+                    <img style="width: 100%; height:600px;" class=" d-block" src="/Public/images/a1.jpg" alt="" />
+                </div>
+                <div class="carousel-item" data-bs-Interval="1000">
+                    <img style="width: 100%; height: 600px;" class=" d-block" src="/Public/images/a2.jpg" alt="" />
+                </div>
+                <div class="carousel-item" data-bs-Interval="1000">
+                    <img style="width: 100%; height: 600px;" class=" d-block" src="/Public/images/a3.jpg"  alt="" />
+                </div>
+            </div>
+
+
+        </div>
+        <div class="d-flex flex-column justify-content-center align-items-center mt-5 gap-4">
+            <div>
+                <button style="width: 370px; height: 42px; color: white;" class="btn btn-warning fs-5">Show me what's in this package</button>
+            </div>
+            <div>
+                <button style="width: 250px; height: 42px; cursor: pointer; font-weight: 500;" class="btn btn-primary">What is the package</button>
+            </div>
+            <div>
+                <p style="width: 800px;" class="align-content-center mt-3">
+                    * A package is a small container in which a quantity of something is sold. Packages are either small
+                    boxes made of thin cardboard, or bags or envelopes made of paper or plastic. ... When a product is
+                    packaged, it is put into containers to be sold.
+                </p>
+            </div>
+
+        </div>
+
+        <div style="margin-top: 150px;" class="d-flex justify-content-evenly ">
+            <div>
+                <table style="width: 1010px;" class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Department</th>
+                            <th scope="col">First</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">M.Tech</th>
+                            <td><span class="bi bi-check fs-2 fw-bold text-success"></span></td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">B.Tech</th>
+                            <td><span class="bi bi-check fs-2 fw-bold text-success"></td>
+
+
+                        </tr>
+                        <tr>
+                            <th scope="row">MCA</th>
+                            <td><span class="bi bi-check fs-2 fw-bold text-success"></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <img class="img-1" src="/Public/images/a4.jpg"  alt="">
+            </div>
+        </div>
+
+        <div style="margin-top: 50px; background-color: rgba(128, 128, 255, 0.66);" class="">
+            <h3 class="text-center pt-4">What is the job</h3>
+            <div class="">
+                <div style="display: grid; grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr; margin-left: 70px; margin-top: 100px; " class="">
+                    <div class="">
+                        <i class="bi bi-keyboard" style="font-size:48px;"></i>
+                        <br>
+                        <br>
+                        <h4>Types of jobs</h4>
+                        <p>Volcanologist. ...</p>
+                        <p>Quantum physicist. ...</p>
+                        <p>Oceanographer. ...</p>
+                        <p>Biomedical engineer. ...</p>
+
+                    </div>
+                    <div class="">
+                        <i class="bi bi-file-earmark-word" style="font-size:48px;"></i>
+                        <br>
+                        <br>
+                        <h4>Define job profile</h4>
+                        <p style=" line-height: 1.7;">Job profile developed by the personnel department of a business
+                            might include such things as job responsibilities, required qualifications, advancement
+                            prospects.</p>
+
+                    </div>
+                    <div>
+                        <i class="bi bi-wordpress" style="font-size:48px;"></i>
+                        <br>
+                        <br>
+                        <h4>Job profile summary</h4>
+                        <p style=" line-height: 1.7;">Profile summary is a summary<br> of your education, skills, career experiences, and goals.</p>
+                    </div>
+                    <div>
+                        <i class="bi bi-display" style="font-size:48px;"></i>
+                        <br>
+                        <br>
+                        <h4>The IT skills</h4>
+                        <p>Coding.</p>
+                        <p>Communication.</p>
+                        <p>Networks.</p>
+                        <p>Time Management.</p>
+                        <p>More Information Technology Skills.</p>
+
+                    </div>
+                    <div>
+                        <i class="bi bi-display" style="font-size:48px;"></i>
+                        <br>
+                        <br>
+                        <h4>Freshers key skills</h4>
+                        <p>Communication.</p>
+                        <p>Ability to Work Under Pressure.</p>
+                        <p>Decision Making.</p>
+                        <p>Time Management.</p>
+                        <p>Self-motivation.</p>
+                        <p>Conflict Resolution.</p>personal skills?
+                        <p>Leadership.</p>
+                        <p>Adaptability.</p>
+
+                    </div>
+                    <div>
+                        <i class="bi bi-display" style="font-size:48px;"></i>
+                        <br>
+                        <br>
+                        <h4>Personal skills</h4>
+                        <p style=" line-height: 1.7;">A skill is the ability to do something well, a certain competence
+                            or proficiency. Skills are typically acquired or developed through direct experiences and
+                            training, and they can require sustained effort.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-start mt-5 gap-1">
+            <div style="width: 60px; height: 60px; border: 5px solid yellow; border-radius: 50%; text-align: center; "
+                class="border-warning pt-1 text-warning fs-2 border-2 fw-bold">
+                1
+            </div>
+            <div style="margin-top: 35px;">
+                <span style="margin-top: 20px; font-size: 23px;">Why do you want this job?</span>
+            </div>
+
+
+        </div>
+        <div class="d-flex justify-content-between ">
+            <div>
+                <p style="width: 1035px; font-size: 20px; margin-left: 30px; margin-top: 10px;"> The hiring manager
+                    wants to: Learn about your career goals and how this position fits into your plan. Make sure that
+                    you are sincerely interested in the    job and will be motivated to perform if hired. Find out what you
+                    know about the company, industry, position (and if you took the time to research).</p>
+            </div>
+            <div class="mx-5">
+                <img style="transform: translateX(-120px);padding-left: 25%; " width="550px" height="250px" class="" src="/Public/images/ind1.jpg" alt="">
+            </div>
+        </div>
+        <div style="border: 0.7px solid #333; width: 500px; margin-left: 50px;" class=""></div>
+
+
+        <div style="margin-left: -300px;" class="d-flex justify-content-center mt-5 gap-1">
+            <div style="width: 60px; height: 60px; border: 2px solid rgb(255, 0, 0); border-radius: 50%; text-align: center; " class=" pt-1 text-danger fs-2 border-2 fw-bold">
+                2
+            </div>
+            <div style="margin-top: 35px;">
+                <span style="margin-top: 20px; font-size: 23px;">What is a CV example?</span>
+            </div>
+
+
+        </div>
+        <div class="d-flex justify-content-between gap-1">
+
+            <div class="mx-4">
+                <img style="transform: translateX(100px); position: relative; left: -50px; top: -30px;" width="350px" height="250px" class="" src="/Public/images/ind2.png" alt="">
+            </div>
+            <div>
+                <p style="width: 1035px; font-size: 20px; margin-left: 50px; margin-top: 10px;"> A resume is a brief
+                    summary. ... If you were writing your resume you would include only the work information that
+                    relates specifically to the job <br>you're applying for,but for a Curriculum Vitae, you would also
+                    include all your teaching experience, lab and field work.</p>
+            </div>
+
+        </div>
+        <div style="border: 0.7px solid #333; width: 500px; margin-left: 1050px;" class=""></div>
+
+
+
+
+        <div class="d-flex justify-content-start mt-5 gap-1">
+            <div style="width: 60px; height: 60px; border: 2px solid rgb(35, 81, 18); border-radius: 50%; text-align: center; " class="border-success pt-1 text-success fs-2 border-2 fw-bold">
+                3
+            </div>
+            <div style="margin-top: 35px;">
+                <span style="margin-top: 20px;font-size: 23px;"> Do you need a resume for your first job?</span>
+            </div>
+
+
+        </div>
+        <div class="d-flex justify-content-between">
+            <div>
+                <p style="width: 1035px; font-size: 20px; margin-left: 20px; margin-top: 10px;"> When writing your first
+                    resume with no work experience, it's appropriate to include casual jobs like babysitting, pet
+                    sitting, lawn mowing, and shoveling snow. All experience counts and the way you present yourself,
+                    your skills, and your assets to a hiring manager begins with a strong resume. </p>
+            </div>
+            <div class="mx-4">
+                <img style="transform: translateX(-120px);" width="350px" height="250px" class=""
+                    src="/Public/images/ind3.png" alt="">
+            </div>
+        </div>
+        <div style="border: 0.7px solid #333; width: 500px; margin-left: 50px;" class=""></div>
+
+
+        <div style="margin-left: -300px;" class="d-flex justify-content-center mt-5 gap-1">
+            <div style="width: 60px; height: 60px; border: 2px solid blue; border-radius: 50%; text-align: center; color: blue; "
+                class=" pt-1 fs-2 border-2 fw-bold">
+                4
+            </div>
+            <div style="margin-top: 35px;">
+                <span style="margin-top: 20px; font-size: 23px;"> Why do you think you can do well in this job?</span>
+            </div>
+
+
+        </div>
+        <div class="d-flex justify-content-between">
+
+            <div class="mx-4">
+                <img style="transform: translateX(100px); position: relative; left: -70px; top: -30px;" width="300px" height="250px" class="" src="/Public/images/ind4.jpg" alt="">
+            </div>
+            <div>
+                <p style="width: 1035px; font-size: 20px; margin-left: 20px; margin-top: 10px;"> I believe I will do
+                    well in this job because I have the relevant skills and it is my field of interest. ... I have a
+                    confident that I can do well in the job because of self confidence, positive attitude. Previous
+                    success also brings self confidence for the future success.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="d-flex flex-row justify-content-center align-items-center mt-3 gap-4">
+            <div>
+                <button
+                    style="border-color: #28a4c9; width: 250px;color: #fff; background-color: #2aabd2; height: 50px;"
+                    class="btn btn-warning"> Request Call Back
+                </button>
+            </div>
+            <div>
+                <button style="width: 100px;border-color: #dbdbdb; background-color: #e0e0e0; color: #000; height: 50px; cursor: pointer;" class="btn btn-primary">FAQ'S
+                </button>
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div style="margin-top: 50px; background-color: rgba(153, 153, 46, 0.66);;" class="">
+            <h3 class="text-center pt-4">
+                Student Department Details</h3>
+            <div class="">
+                <div style="display: grid; margin-top: 55px; height: 300px;
+            grid-template-columns: 3fr 3fr 3fr 3fr; margin-left: 70px;  " class="">
+                    <div class="">
+                        <i class="bi bi-hourglass" style="font-size:48px; padding-left: 20%;"></i>
+                        <br><br>
+                        <h4 style="font-size: 20px;">Average Salary Offered</h4>
+                        <h3 style="font-size: 25px;">INR 7 L per annum</h3>
+                        <h4 style="font-size: 20px; padding-left: 15%;">per annum</h4>
+
+                    </div>
+                    <div class="">
+                        <i class="bi bi-repeat" style="font-size:48px; padding-left: 3%;"></i>
+                        <br><br>
+                        <h4 style="font-size: 20px;">Duration</h4>
+                        <h3 style="font-size: 25px; padding-left: 7%;">2</h3>
+                        <h4 style="font-size: 20px;padding-left: 4%;">years</h4>
+
+                    </div>
+                    <div>
+                        <i class="bi bi-hand-thumbs-up" style="font-size:48px;padding-left: 18%;"></i>
+                        <br><br>
+                        <h4 style="font-size: 20px;">Average Fees Incurred</h4>
+                        <h3 style="font-size: 25px;">INR 25,000 - 2 L </h3>
+                        <h4 style="font-size: 20px;padding-left: 10%;">per annum</h4>
+
+                    </div>
+                    <div>
+                        <i class="bi bi-flag" style="font-size:48px;padding-left: 40%;"></i>
+                        <br><br>
+                        <h4 style="font-size: 18px;">Indian Institute of Technology,[IIT] Kanpur</h4>
+                        <h3 style="font-size: 25px;padding-left: 35%;">49,035</h3>
+                        <h4 style="font-size: 20px;padding-left: 35%;">Kanpur</h4>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="text-center" style="padding-bottom: 1px;">
+                <p class="text-center w-100"> * job: A group of homogeneous tasks related by similarity of functions.
+                </p>
+            </div>
+        </div>
+
+
+        <div>
+            <h3 class="text-center pt-3">Service</h3>
+        </div>
+        <div class="d-flex justify-content-around mt-5">
+            <div style="height: 390px; " class="s1 w-25">
+                <div style="box-shadow: 1px 5px 8px 10px #333333;" class="d-flex flex-column gap-3">
+
+                    <img style="width: 350px; height: 200px;" class="" src="/Public/images/s1.jpg" alt="">
+                    <h4 class="mx-2 fst-italic fs-6">WEB DESIGN !!</h4>
+                    <p class="fst-italic mx-2">Online ordering system helps to maintain a Better Business Relationship
+                        with
+                        your customers,We deliver results by designing which is a key factor to run any successful
+                        business.</p>
+                </div>
+            </div>
+
+
+            <div style="height: 320px; " class="s2 w-25">
+                <div style="box-shadow: 1px 5px 8px 10px #333333;" class="d-flex flex-column gap-3">
+
+                    <img style="width: 350px; height: 200px;" class="" src="/Public/images/s2.jpg" alt="">
+                    <h4 class="mx-2 fst-italic fs-6">IT SERVICES !!</h4>
+                    <p class="fst-italic mx-2">We are ideally located in Larbert meaning we can offer IT support to
+                        businesses throughout Scotland. We take the hassle and worry out of your IT system by providing
+                        preventative and proactive IT support.</p>
+                </div>
+            </div>
+
+
+            <div style="height: 320px; " class="s3 w-25">
+                <div style="box-shadow: 1px 5px 8px 10px #333333;" class="d-flex flex-column gap-3">
+
+                    <img style="width: 350px; height: 200px;" class="" src="/Public/images/s3.png" alt="">
+                    <h4 class="mx-2 fst-italic fs-6">WEB MARKETING !!</h4>
+                    <p class="fst-italic mx-2">We are passionate about digital content creation, strategy and delivery.
+                        We deliver results by designing marketing strategies which improve our clients brand
+                        visibility..</p>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    </main>
+
+    <!-- footer -->
+
+    <footer style="  color: white; text-shadow: 2px 2px 4px #a6a6a6;">
+        <div class="mt-5" style=" height: 300px; background-color: #404040;">
+            <div>
+                <h4 style="font-size: 15px;" class="pt-4 text-center ">Naresh Technologies</h4>
+            </div>
+            <div style=" margin-top: 50px; margin-left: 50px; display: grid; grid-template-columns: 4fr 4fr 4fr;">
+                <div class="ft-1">
+                    <ul class="text-white">
+                        <li><a class="text-white" href="https://www.facebook.com/nareshit/" target="_blank"><i
+                                    class="bi bi-facebook"></i> Facebook</a></li>
+                        <li><a class="text-white" href="https://nareshit.in/course-schedule/" target="_blank"><i
+                                    class="bi bi-google"></i> Google</a></li>
+                        <li><a class="text-white" href="https://twitter.com/nareshitech?lang=en" target="_blank"><i
+                                    class="bi bi-twitter"></i> Twitter</a></li>
+                        <li><a class="text-white" href="https://www.youtube.com/user/nareshtechnologies"
+                                target="_blank"><i class="bi bi-youtube"></i> Youtube</a></li>
+                    </ul>
+
+                </div>
+
+                <div style="display: grid;" class="ft-1">
+                    <ul>
+                        <li><a class="text-white" href="./index.html">Home</a></li>
+                        <li><a class="text-white" href="./about.html">About</a></li>
+                        <li><a class="text-white" href="./service.html">Service</a></li>
+                        <li><a class="text-white" href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="f-2">
+                    <ul class="text-black">
+                        <li class="text-white">Name : Naresh Istitute</li>
+                        <li class="text-white">Email : info@nareshit.com</li>
+                        <li class="text-white">Contact : +91-xxxxxxxxxx</li>
+                        <li class="text-white">Address : Sr nagar, Hyderabad, Telangana, India </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
